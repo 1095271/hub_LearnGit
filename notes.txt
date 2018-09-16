@@ -1,8 +1,11 @@
 git add -> git commit -m
-git log || git reflog
+git log || git reflog || git log --graph (git log --graph --pretty=oneline --abbrev-commit
 git reset -hard head^ .. head~2,3,4,100
 git checkout -- file (test.txt)  --工作区撤销
 git reset head file (test.txt)   --暂存区撤销
 git rm file
 git diff (head) -- file  (--还不清楚可不可以删掉)
 git remote add origin --> git push origin master  (-u第一次)
+git checkout -b <name>
+git merge <name>     --git merge --no-ff -m "merge with no-ff" <file>
+git branch -d <name>
